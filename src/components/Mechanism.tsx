@@ -18,7 +18,7 @@ export default function Mechanism() {
             <em className="text-brand-gold not-italic">percepção bem projetada.</em>
           </h2>
           <p className="body-text">
-            O AI Photo Mastery utiliza IA, direcao visual e engenharia perceptiva para construir fotos que parecem mais
+            O AI Photo Mastery utiliza IA, direção visual e engenharia perceptiva para construir fotos que parecem mais
             sofisticadas, naturais, premium e visualmente intencionais.
           </p>
         </div>
