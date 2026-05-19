@@ -2,7 +2,6 @@ import { Shield, Check, LockKeyhole, BadgeCheck, Headphones } from 'lucide-react
 const offerImage = '/imagens/oferta.png';
 const bonusImage = '/imagens/bonus.png';
 const offerStackImage = '/imagens/offer_stack.png';
-import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 const includes = [
   'AI Photo Mastery System',
@@ -77,7 +76,7 @@ export default function Offer() {
                   href="https://pay.kiwify.com.br/YeSpnD6"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={trackInitiateCheckout}
+            
                   className="offer-cta-glow group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl border border-[#f3c977]/70 bg-[linear-gradient(180deg,#f4c45f_0%,#d8a43d_48%,#b97919_100%)] px-5 py-4 text-center shadow-[0_0_0_1px_rgba(255,215,130,0.25),0_0_34px_rgba(241,184,72,0.34)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,215,130,0.4),0_0_42px_rgba(241,184,72,0.48)] sm:px-8 sm:py-5"
                 >
                   <div className="offer-cta-sheen pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.12)_35%,rgba(255,255,255,0.36)_50%,rgba(255,255,255,0.12)_65%,transparent_100%)] opacity-70" />
