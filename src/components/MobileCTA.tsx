@@ -1,15 +1,11 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
-import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 export default function MobileCTA() {
   const [visible, setVisible] = useState(false);
 
-  const handleAccessClick = () => {
-    trackInitiateCheckout();
-    scrollToSection('oferta');
-  };
+  const handleAccessClick = () => scrollToSection('oferta');
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 500);
