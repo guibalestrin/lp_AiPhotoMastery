@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 export default function FinalCTA() {
   return (
@@ -37,6 +38,7 @@ export default function FinalCTA() {
               href="https://pay.kiwify.com.br/YeSpnD6"
               target="_blank"
               rel="noreferrer"
+              onClick={trackInitiateCheckout}
               className="btn-primary gap-2"
             >
               Acessar o sistema
