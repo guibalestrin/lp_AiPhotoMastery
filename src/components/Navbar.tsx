@@ -1,16 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { scrollToSection } from '../utils/scrollToSection';
-import { trackInitiateCheckout } from '../utils/trackInitiateCheckout';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleAccessClick = () => {
-    trackInitiateCheckout();
-    scrollToSection('oferta');
-  };
+  const handleAccessClick = () => scrollToSection('oferta');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
